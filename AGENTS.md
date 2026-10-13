@@ -1,14 +1,17 @@
-<!-- BEGIN:nextjs-agent-rules -->
 # AGENTS.md
 
 Huyen's personal website. Next.js 16 (App Router), React 19, TypeScript and Tailwind CSS v4.
 It is a learning project, so clarity beats cleverness. No database or backend; content lives in the repo.
+
+<!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
 
 ## Non-negotiable rules
 
@@ -107,9 +110,6 @@ Components used by only one page may live next to that page instead of in `compo
 ## Content
 
 - Social URLs and site metadata live in one file, `lib/site.ts`.
-  - LinkedIn: `<YOUR_LINKEDIN_URL>`
-  - GitHub: `<YOUR_GITHUB_URL>`
 - Update the resume by replacing `public/resume.pdf` with the same filename.
 - Projects start as a typed array in `lib/projects.ts`.
 - Ask before choosing a Markdown/MDX approach or a parsing library for blog posts.
-<!-- END:nextjs-agent-rules -->
