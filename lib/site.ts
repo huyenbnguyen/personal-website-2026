@@ -13,12 +13,12 @@ const socialLinks: SocialLink[] = [
   { 
     type: "GitHub",
     link: "https://github.com/huyenbnguyen", 
-    iconPath: "/github.svg"
+    iconPath: "/socials/github.svg"
   },
   {
     type: "LinkedIn",
     link: "https://www.linkedin.com/in/huyenbnguyen/",
-    iconPath: "/linkedin.svg"
+    iconPath: "/socials/linkedin.svg"
   }
 ]
 
