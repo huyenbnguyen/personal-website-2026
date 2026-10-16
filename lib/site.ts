@@ -27,7 +27,8 @@ export const site = {
   tagline: "Senior backend engineer with 6.5 years of experience, now learning full stack and AI engineering.",
   description:
     "Huyen Nguyen's personal website.",
-  links: socialLinks
+  links: socialLinks,
+  year: "2026"
 };
 
 export const nav: NavItem[] = [
