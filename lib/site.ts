@@ -3,15 +3,31 @@ export type NavItem = {
   label: string;
 };
 
+export type SocialLink = {
+  type: string;
+  link: string;
+  iconPath: string;
+}
+
+const socialLinks: SocialLink[] = [
+  { 
+    type: "GitHub",
+    link: "https://github.com/huyenbnguyen", 
+    iconPath: "/github.svg"
+  },
+  {
+    type: "LinkedIn",
+    link: "https://www.linkedin.com/in/huyenbnguyen/",
+    iconPath: "/linkedin.svg"
+  }
+]
+
 export const site = {
   name: "Huyen Nguyen",
   tagline: "Senior backend engineer with 6.5 years of experience, now learning full stack and AI engineering.",
   description:
     "Huyen Nguyen's personal website.",
-  links: {
-    github: "https://github.com/huyenbnguyen",
-    linkedin: "https://www.linkedin.com/in/huyenbnguyen/",
-  },
+  links: socialLinks
 };
 
 export const nav: NavItem[] = [
