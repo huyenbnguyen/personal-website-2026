@@ -9,7 +9,7 @@ export default function Home() {
       
       {/* Left column: photo */}
       <Image
-        src="/profile.jpeg"
+        src="/profile/profile.jpeg"
         alt={`Portrait of ${site.name}`}
         width={800}
         height={800}
