@@ -10,7 +10,6 @@ export default function ThemeToggle() {
 	return (
 		<button
 			type="button"
-			aria-label="Toggle theme"
 			className="block rounded p-1 opacity-70 hover:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500"
 			onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
 
@@ -21,7 +20,7 @@ export default function ThemeToggle() {
 			{/* Moon icon hidden in LIGHT mode, shows in DARK mode */}
 			<Moon className="h-5 w-5 text-blue-400 hidden dark:block" />
 			<span className="sr-only hidden dark:inline">Switch to light mode</span>
-			
+
 		</button>
 	)
 
