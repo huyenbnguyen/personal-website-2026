@@ -1,4 +1,4 @@
-export type About = {
+export type Home = {
   bio: string;
   skills: string[];
 };
@@ -7,7 +7,7 @@ export type Experience = {
   role: string;
   company: string;
   period: string;
-  summary: string;
+  summary: string[];
 };
 
 export type Education = {
@@ -29,7 +29,7 @@ export type Post = {
   body: string;
 };
 
-export const about: About = {
+export const home: Home = {
   bio: "I'm a software engineer who likes clear code, small tools, and learning in public. This site is a place for projects, a resume, and notes.",
   skills: ["TypeScript", "React", "Next.js", "Python", "SQL"],
 };
@@ -41,14 +41,14 @@ export const resume: Resume = {
       company: "Example Corp",
       period: "2023 — Present",
       summary:
-        "Built product features, improved reliability, and collaborated with design and data teams.",
+        ["Built product features", "Improved reliability", "Collaborated with design and data teams"],
     },
     {
       role: "Software Engineering Intern",
       company: "Example Labs",
       period: "Summer 2022",
       summary:
-        "Shipped an internal dashboard and wrote tests for the team's API.",
+        ["Shipped an internal dashboard", "Wrote tests for the team's API"],
     },
   ],
   education: [
