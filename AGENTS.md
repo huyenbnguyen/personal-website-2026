@@ -62,7 +62,7 @@ Version-specific rules:
 
 ## Site features
 
-- Pages: Resume (PDF), About, Projects, Blog
+- Pages: Home, Resume, Projects, Blog
 - Global: dark/light mode toggle, LinkedIn and GitHub links
 
 ## Project structure
@@ -72,7 +72,6 @@ app/                    # Routes: each folder is a URL segment, page.tsx makes i
   layout.tsx            # Root layout: <html>, <body>, header, footer, theme setup
   page.tsx              # Home (/)
   globals.css           # Tailwind import, @theme tokens, dark variant
-  about/page.tsx        # /about
   projects/page.tsx     # /projects
   resume/page.tsx       # /resume, embeds or links to /resume.pdf
   blog/page.tsx         # /blog, list of posts
