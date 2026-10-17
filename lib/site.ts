@@ -1,3 +1,8 @@
+export type Home = {
+  bio: string;
+  skills: string[];
+};
+
 export type NavItem = {
   href: string;
   label: string;
@@ -8,6 +13,11 @@ export type SocialLink = {
   link: string;
   iconPath: string;
 }
+
+export const home: Home = {
+  bio: "I'm a software engineer who likes clear code, small tools, and learning in public. This site is a place for projects, a resume, and notes.",
+  skills: ["TypeScript", "React", "Next.js", "Python", "SQL"],
+};
 
 const socialLinks: SocialLink[] = [
   { 

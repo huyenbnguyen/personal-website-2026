@@ -1,5 +1,12 @@
 import { site } from "@/lib/site";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `Resume | ${site.name}`,
+  description: `Resume of ${site.name}.`,
+};
+
 export default function ResumePage() {
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-6 py-10">

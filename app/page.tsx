@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { home } from "@/lib/content";
+import { home } from "@/lib/site";
 import { site } from "@/lib/site";
 
 export default function Home() {
