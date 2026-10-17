@@ -73,7 +73,7 @@ app/                    # Routes: each folder is a URL segment, page.tsx makes i
   page.tsx              # Home (/)
   globals.css           # Tailwind import, @theme tokens, dark variant
   projects/page.tsx     # /projects
-  resume/page.tsx       # /resume, embeds or links to /resume.pdf
+  resume/page.tsx       # /resume, embeds or links to /resume/Huyen_Nguyen_Resume.pdf
   blog/page.tsx         # /blog, list of posts
   blog/[slug]/page.tsx  # /blog/<slug>, one post; pre-render with generateStaticParams
   not-found.tsx         # Custom 404
@@ -81,8 +81,6 @@ components/             # UI shared by several pages (Header, Footer, ThemeToggl
 content/blog/           # Blog post source files
 lib/                    # Non-UI TypeScript: site config, project data, post loading
 public/                 # Static files served from the site root
-  resume.pdf            # Served at /resume.pdf
-  images/
 eslint.config.mjs       # ESLint flat config
 next.config.ts          # Next.js config, incl. the Turbopack rule that loads Tailwind
 tsconfig.json           # TypeScript config
@@ -109,6 +107,6 @@ Components used by only one page may live next to that page instead of in `compo
 ## Content
 
 - Social URLs and site metadata live in one file, `lib/site.ts`.
-- Update the resume by replacing `public/resume.pdf` with the same filename.
+- Update the resume by replacing `public/resume/Huyen_Nguyen_Resume.pdf` with the same filename.
 - Projects start as a typed array in `lib/projects.ts`.
 - Ask before choosing a Markdown/MDX approach or a parsing library for blog posts.
