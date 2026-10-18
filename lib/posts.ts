@@ -19,3 +19,16 @@ export const posts: Post[] = [
 export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((post) => post.slug === slug);
 }
+
+export function getSortedPosts(): Post[] {
+  return [...posts].sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function formatDate(date: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(date));
+}
