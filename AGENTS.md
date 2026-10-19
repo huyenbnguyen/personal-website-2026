@@ -76,9 +76,7 @@ app/                    # Routes: each folder is a URL segment, page.tsx makes i
   resume/page.tsx       # /resume, embeds or links to /resume/Huyen_Nguyen_Resume.pdf
   blog/page.tsx         # /blog, list of posts
   blog/[slug]/page.tsx  # /blog/<slug>, one post; pre-render with generateStaticParams
-  not-found.tsx         # Custom 404
 components/             # UI shared by several pages (Header, Footer, ThemeToggle, SocialLinks)
-content/blog/           # Blog post source files
 lib/                    # Non-UI TypeScript: site config, project data, post loading
 public/                 # Static files served from the site root
 eslint.config.mjs       # ESLint flat config
